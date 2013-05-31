@@ -1,0 +1,13 @@
+<%= render :partial => 'flash_messages' %>
+
+<%= form_for @user, :as => :user, :url => { :controller => 'user', :action => "new" } do |f| -%>
+  <%= profile_fields_for(f, UserController.editable_attributes_on_register) %>
+  <% if CurrentUserConfiguration.use_recaptcha_on_user_registration %>
+    <%= content_tag(:div,
+      label_tag('', t("rails_connector.views.user.captcha")),
+      :class => "label"
+    ) %>
+    <%= get_captcha(:options => {:lang => I18n.locale, :theme => 'clean'}).html_safe %>
+  <% end %>
+  <%= f.submit t('rails_connector.views.user.register_button') %>
+<% end -%>

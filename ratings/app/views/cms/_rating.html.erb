@@ -1,0 +1,31 @@
+<% if RailsConnector::Configuration.enabled?(:ratings) and @obj.allow_rating? %>
+  <% if @obj.allow_anonymous_rating? || logged_in? %>
+    <div id="starRating" data-default_description="<%= t "rails_connector.views.cms.rating.rate_here" %>">
+      <h4><%= t(:"rails_connector.views.cms.rating.title") %></h4>
+      <ul class="star-rating">
+        <li class="current-rating" style="width:<%= @obj.average_rating_in_percent %>%; margin:0; padding:0;"></li>
+        <%= stars_for_rating(@obj) unless rated_by_current_user?(@obj) %>
+      </ul>
+      <div id="starRating_label">
+        <% if rated_by_current_user?(@obj) %>
+          <%= t(:"rails_connector.views.cms.rating.thanks") %>
+        <% else %>
+          <%= t(:"rails_connector.views.cms.rating.rate_here") %>
+        <% end %>
+      </div>
+      <% if admin? %>
+        <div class="admin">
+          <%= link_to(ratings_url(:action => :reset, :id => @obj.id),
+                  :confirm => t("rails_connector.views.cms.rating.are_you_sure")) do %>
+            <%= t("rails_connector.views.cms.rating.reset") %>
+            <%= image_tag("admin/minus.gif") %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <div class="rating_login_required">
+      <%=t :"rails_connector.views.cms.rating.login_required" %>
+    </div>
+  <% end %>
+<% end %>

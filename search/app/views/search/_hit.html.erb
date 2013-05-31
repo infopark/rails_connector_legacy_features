@@ -1,0 +1,11 @@
+<% if hit.obj -%>
+<div class='searchHit'>
+  <h3><a href="<%= cms_path(hit.obj) %>">
+    <%= display_field hit.obj, :title, :marker => false %>
+  </a></h3>
+  <p class = 'hitDetails'>
+    <span class="hitExtension"><%= display_value hit.obj.file_extension %></span>,
+    <span class="hitLastChanged"><%= display_value hit.obj.last_changed %></span>
+  </p>
+</div>
+<% end -%>

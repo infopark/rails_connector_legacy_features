@@ -1,0 +1,17 @@
+<%= form_tag cms_path(@obj) do -%>
+  <% unless logged_in? -%>
+    <%= fields_for :user, @user do |registration| -%>
+      <%= profile_fields_for(registration, editable_attributes_on_register) %>
+    <% end -%>
+  <% else -%>
+    <p>
+      <%= logged_in_as(current_user.login) %>
+      — <%= link_to('Logout', user_path(:action => 'logout', :return_to => request.fullpath)) %>
+    </p>
+  <% end -%>
+  <%= fields_for :activity do |f| -%>
+    <%= title_field_for(f) %>
+    <%= custom_fields_for(f) %>
+  <% end -%>
+  <%= submit_tag t('rails_connector.views.crm_form.submit') %>
+<% end -%>

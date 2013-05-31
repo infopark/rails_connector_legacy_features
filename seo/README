@@ -1,0 +1,5 @@
+= Infopark Rails Connector
+
+== Seo Sitemap
+
+The default implementation of the SEO sitemap will reference all the files from your CMS in the generated <tt>sitemap.xml</tt>. For a large number of files, this can slow down your server. Please refer to {RailsConnector::SEO::ClassMethods#find_all_for_sitemap} for advice on optimization.

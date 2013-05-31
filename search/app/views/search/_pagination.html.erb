@@ -1,0 +1,5 @@
+<% if @hits.total_entries > @hits.per_page %>
+  <div id="searchPagination">
+    <%= will_paginate @hits, :previous_label => '<', :next_label => '>' %>
+  </div>
+<% end %>

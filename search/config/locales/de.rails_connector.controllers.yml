@@ -1,0 +1,7 @@
+de:
+  rails_connector:
+    controllers:
+      search:
+        specify_query: "Bitte geben Sie einen Suchbegriff ein."
+        try_another_key: "Bitte versuchen Sie es mit anderen Suchbegriffen erneut."
+        search_disabled: "Wegen Wartungsarbeiten steht die Suche derzeit nicht zur Verfügung. Bitte entschuldigen Sie die Störung."

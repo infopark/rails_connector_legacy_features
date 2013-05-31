@@ -1,0 +1,11 @@
+en:
+  rails_connector:
+    views:
+      cms:
+        rating:
+          rate_here: "Please rate here."
+          thanks: "Thank you for rating."
+          title: "Rating"
+          login_required: Please login to rate this content.
+          reset: "Reset rating"
+          are_you_sure: "Are you sure you want to reset this rating?"

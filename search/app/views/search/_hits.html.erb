@@ -1,0 +1,11 @@
+<% if @hits %>
+  <div id="seachResults">
+    <p id="searchSummary">
+      <%= @hits.total_entries %> <%=t :"rails_connector.views.search.hits" %>
+    </p>
+    <div id="searchHits">
+      <%= render :partial => 'hit', :collection => @hits %>
+    </div>
+  </div>
+  <%= render :partial => 'pagination' %>
+<% end %>

@@ -1,0 +1,15 @@
+<%= render :partial => 'flash_messages' %>
+
+<%= form_for :user, :url => { :controller => 'user', :action => "login" } do |f| -%>
+  <%= hidden_field_tag :return_to, params[:return_to] %>
+  <div class="label"><%= f.label :login, t('rails_connector.views.user.login') %></div>
+  <div class="field"><%= f.text_field :login %></div>
+  <div class="label"><%= f.label :password, t('rails_connector.views.user.password') %></div>
+  <div class="field"><%= f.password_field :password %></div>
+  <%= f.submit t('rails_connector.views.user.login_button') %>
+<% end -%>
+
+<ul>
+  <li class="button_register"><%= link_to t('rails_connector.views.user.new_link'), :action => "new" %></li>
+  <li class="button_request_password"><%= link_to t('rails_connector.views.user.forgot_password_link'), :action => "forgot_password" %></li>
+</ul>

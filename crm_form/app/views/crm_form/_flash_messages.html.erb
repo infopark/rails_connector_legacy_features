@@ -1,0 +1,11 @@
+<% if flash[:error] %>
+  <div class="error crm_form">
+    <p><%= flash[:error] %></p>
+    <%= error_messages(@user, @activity) %>
+  </div>
+<% end %>
+<% if flash[:notice] %>
+  <div class="notice crm_form">
+    <p><%= flash[:notice] %></p>
+  </div>
+<% end %>

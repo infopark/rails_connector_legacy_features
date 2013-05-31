@@ -1,0 +1,9 @@
+de:
+  rails_connector:
+    helpers:
+      ratings:
+        bad: "schlecht"
+        mediocre: "mäßig"
+        average: "mittel"
+        good: "gut"
+        very_good: "super"

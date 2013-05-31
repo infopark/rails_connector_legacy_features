@@ -1,0 +1,5 @@
+de:
+  rails_connector:
+    controllers:
+      crm_form:
+        submit_failed: "Absenden fehlgeschlagen, bitte überprüfen Sie ihre Eingaben."

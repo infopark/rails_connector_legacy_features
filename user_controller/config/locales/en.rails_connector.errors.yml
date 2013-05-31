@@ -1,0 +1,5 @@
+en:
+  rails_connector:
+    errors:
+      forbidden:
+        no_permissions: "You don't have the required permissions"

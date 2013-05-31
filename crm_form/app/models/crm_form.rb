@@ -1,0 +1,2 @@
+class CrmForm < Obj
+end

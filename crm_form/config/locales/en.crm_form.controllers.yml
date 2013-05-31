@@ -1,0 +1,5 @@
+en:
+  rails_connector:
+    controllers:
+      crm_form:
+        submit_failed: "Submit failed, please check your input."

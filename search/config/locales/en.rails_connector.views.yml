@@ -1,0 +1,6 @@
+en:
+  rails_connector:
+    views:
+      search:
+        search_failed: Unfortunately your search request could not be completed
+        hits: hits

@@ -1,0 +1,16 @@
+de:
+  rails_connector:
+    views:
+      cms:
+        comments:
+          title: Leserkommentare
+          add_comment: Kommentar hinzufügen
+          name: "Name:"
+          email: "E-Mail:"
+          subject: "Betreff:"
+          body: "Kommentar:"
+          submit: senden
+          no_comments: Keine Kommentare vorhanden
+          wrote_on: schrieb am
+          are_you_sure: "Diesen Kommentar wirklich löschen?"
+          login_required: "Bitte melden Sie sich an, um einen Kommentar zu hinterlassen."

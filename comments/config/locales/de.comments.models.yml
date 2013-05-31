@@ -1,0 +1,8 @@
+de:
+  rails_connector:
+    models:
+      comment:
+        name_missing: Bitte geben Sie Ihren Namen an.
+        body_missing: Bitte geben Sie Ihren Kommentar ein.
+        subject_missing: Bitte geben Sie einen Betreff für Ihren Kommentar ein.
+        email_format_invalid: Bitte geben Sie eine gültige E-Mail-Adresse ein.

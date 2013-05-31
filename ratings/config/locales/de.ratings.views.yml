@@ -1,0 +1,11 @@
+de:
+  rails_connector:
+    views:
+      cms:
+        rating:
+          rate_here: "Bewerten Sie hier!"
+          thanks: "Danke für Ihre Bewertung."
+          title: "Bewertung"
+          login_required: "Bitte melden Sie sich an, um eine Bewertung abzugeben."
+          reset: "Bewertung zurücksetzen"
+          are_you_sure: "Bewertung dieser Seite wirklich zurücksetzen?"

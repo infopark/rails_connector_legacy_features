@@ -1,0 +1,22 @@
+de:
+  rails_connector:
+    controllers:
+      user:
+        login_successful: "Sie wurden erfolgreich angemeldet."
+        login_failed: "Login fehlgeschlagen, bitte überprüfen Sie ihre Eingaben."
+        registration_successful: "Sie wurden erfolgreich registriert. Sie bekommen in Kürze eine Bestätigung sobald die Registrierung geprüft wurde."
+        registration_successful_awaiting_confirmation: "Wir haben Ihnen eine E-Mail zur Bestätigung Ihrer Daten geschickt. Bitte klicken Sie auf den Link in der E-Mail, um Ihre Registrierung zu bestätigen."
+        registration_failed: "Registrierung fehlgeschlagen, bitte überprüfen Sie ihre Eingaben."
+        edit_successful: "Benutzerdaten wurden erfolgreich aktualisiert."
+        edit_failed: "Benutzerdaten konnten nicht aktualisiert werden, bitte überprüfen Sie ihre Eingaben."
+        edit_password_successful: "Passwort wurde erfolgreich aktualisiert."
+        edit_password_failed: "Passwort konnte nicht aktualisiert werden, bitte überprüfen Sie ihre Eingaben."
+        reset_password_successful: "Sie haben eine E-Mail mit einem Link zur Änderung Ihres Passwortes erhalten."
+        request_password_failed: "Es wurde kein Account zu diesem Login gefunden, bitte prüfen Sie ihre Eingabe."
+        password_cannot_be_empty: "Das Passwort kann nicht leer sein"
+        password_does_not_match_confirmation: "Das Passwort stimmt nicht mit der Bestätigung überein"
+        password_set: "Passwort wurde erfolgreich gesetzt."
+        token_url_invalid: "Um Ihr Passwort setzen zu können, müssen Sie den Link aus der E-Mail benutzen."
+        set_password_failed: "Fehler beim Setzen des Passwortes. Der Link, den Sie erhalten haben, ist drei Stunden gültig."
+        crm_error: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später nochmal."
+        email_blank: "E-Mail darf nicht leer sein."

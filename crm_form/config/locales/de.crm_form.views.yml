@@ -1,0 +1,12 @@
+en:
+  will_paginate:
+    page_gap: …
+  rails_connector:
+    views:
+      crm_form:
+        submit: Submit
+        confirmation: 'Thank you for contacting us, we will get back to you shortly'
+        reference_further_questions: 'If you have questions regarding this case, please refer to case %{case_id}.'
+        title: Subject
+        must_be_logged_in: 'You must be logged in to access this page.'
+        logged_in_as: 'You are logged in as %{user}'

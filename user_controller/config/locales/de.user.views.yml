@@ -1,0 +1,49 @@
+de:
+  rails_connector:
+    views:
+      user:
+        contact:
+          email: E-Mail
+          fax: Fax
+          first_name: Vorname
+          gender: Geschlecht
+          job_title: Tätigkeit
+          language: Sprache
+          last_name: Nachname
+          letter_address: Anschrift
+          login: Benutzername
+          mobile_phone: Mobiltelefon
+          phone: Telefonnummer
+          want_email: Kontakt via E-Mail
+          want_phonecall: Kontakt via Telefon
+          want_snailmail: Kontakt via Post
+          street_address: Straße und Hausnummer
+          postalcode: Postleitzahl
+          locality: Ort
+        languages:
+          de: deutsch
+          en: englisch
+        gender_male: männlich
+        gender_female: weiblich
+        login: Benutzername
+        password: Passwort
+        old_password: altes Passwort
+        new_password: neues Passwort
+        new_password_confirm: neues Passwort bestätigen
+        captcha: Bitte geben Sie die 2 Wörter ein
+        register_button: Registrieren
+        login_button: Einloggen
+        edit_button: Speichern
+        change_password_button: Passwort ändern
+        set_password_button: Passwort setzen
+        forgot_password_button: Passwort zurücksetzen
+        forgot_password_subject: Ihre Anfrage zur Änderung Ihres Passwortes
+        forgot_password_heading: Sie haben ein neues Password angefordert.
+        register_password_confirmation_mail_subject: Bitte bestätigen Sie Ihre Registrierung
+        register_heading: Vielen Dank für Ihre Anmeldung.
+        confirm_request: 'Bitte bestätigen Sie Ihre Anfrage unter %{url} und setzen dort ein Passwort.'
+        no_request: 'Falls Sie keine Anfrage gestellt haben, können Sie diese Nachricht ignorieren.'
+        new_link: Registrieren
+        edit_link: Profil bearbeiten
+        edit_password_link: Passwort bearbeiten
+        forgot_password_link: Passwort vergessen?

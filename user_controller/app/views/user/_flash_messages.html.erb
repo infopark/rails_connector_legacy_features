@@ -1,0 +1,11 @@
+<% if flash[:error] %>
+  <div class="error">
+    <p><%= flash[:error] %></p>
+    <%= error_messages(@user, @inquiry) %>
+  </div>
+<% end %>
+<% if flash[:notice] %>
+  <div class="notice">
+    <p><%= flash[:notice] %></p>
+  </div>
+<% end %>

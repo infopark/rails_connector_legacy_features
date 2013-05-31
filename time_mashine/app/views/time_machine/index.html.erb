@@ -1,0 +1,88 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag :time_machine %>
+  <%= javascript_include_tag :time_machine %>
+  <%= javascript_tag "
+    var guiWindow = opener.parent;
+    var myCalendar;
+    var mySlider;
+    var today = new Date();
+    today.setMilliseconds(0);
+    today.setSeconds(0);
+    today.setMinutes(0);
+    today.setHours(0);" %>
+</head>
+
+<% end %>
+
+<div id='time-machine'>
+  <div id='calendar'></div>
+  <%= javascript_tag %Q@
+    function updatePreview(cal) {
+        var y = cal.date.getFullYear();
+        var m = cal.date.getMonth() + 1;
+        var d = cal.date.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        url = "#{time_machine_url(:action => 'set_preview_time')}?preview_time=" + y + m + d + "000000";
+        guiWindow.nps_browser_frame.sendRequest(url);
+    }
+
+    function daysFromToday(date) {
+      return Number((date.getTime() - today.getTime()) / 86400000).toFixed(0);
+    }
+
+    function dateChanged(cal) {
+      updatePreview(cal);
+      mySlider.setValue(daysFromToday(cal.date));
+    };
+
+    myCalendar = Calendar.setup({
+          flat: "calendar",
+          flatCallback: dateChanged,
+          date: new Date(#{@preview_time.year}, #{@preview_time.month - 1}, #{@preview_time.day}),
+          dateStatusFunc: function(date) {
+            return (date.getTime() < today.getTime() || daysFromToday(date) > 60);
+          }
+        });@ %>
+
+  <div id="slider">
+    <div id="track">
+      <div id="handle"></div>
+    </div>
+    <div id="display"></div>
+  </div>
+
+  <p>
+    <%= javascript_tag %Q|
+      function displayValue(v)
+      {
+        if (v == 0) {
+          return 'Heute';
+        } else if (v == 1) {
+          return 'Morgen';
+        } else {
+          return v + ' Tage in der Zukunft';
+        }
+      }
+
+      mySlider = new Control.Slider('handle','track', {
+            range: $R(0,60),
+            values: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+              20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+              40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60],
+            onSlide: function(v) {
+              $('display').innerHTML = displayValue(v);
+            },
+            onChange: function(v) {
+              $('display').innerHTML = displayValue(v);
+              myCalendar.setDate(new Date(today.getTime() + v * 86400000));
+              updatePreview(myCalendar);
+            }
+          });
+      mySlider.setValue(daysFromToday(myCalendar.date));| %>
+  </p>
+</div>

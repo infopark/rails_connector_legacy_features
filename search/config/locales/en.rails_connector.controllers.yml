@@ -1,0 +1,7 @@
+en:
+  rails_connector:
+    controllers:
+      search:
+        specify_query: Please enter a search term.
+        try_another_key: Please repeat your search with a different search term.
+        search_disabled: Search is currently not available due to maintenance. We apologize for this error.

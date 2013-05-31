@@ -1,0 +1,6 @@
+de:
+  rails_connector:
+    views:
+      search:
+        search_failed: "Ihre Suchanfrage konnte leider nicht ausgeführt werden"
+        hits: "Treffer"

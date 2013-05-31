@@ -1,0 +1,16 @@
+en:
+  rails_connector:
+    views:
+      cms:
+        comments:
+          title: Comments
+          add_comment: Add a comment
+          name: "Name:"
+          email: "E-mail:"
+          subject: "Subject:"
+          body: "Comment:"
+          submit: send
+          no_comments: There are no comments yet
+          wrote_on: wrote on
+          are_you_sure: "Are you sure you want to delete this comment?"
+          login_required: Please login to leave a comment.

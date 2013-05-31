@@ -1,0 +1,5 @@
+de:
+  rails_connector:
+    errors:
+      forbidden:
+        no_permissions: "Sie haben nicht die notwendigen Zugriffsrechte"

@@ -1,0 +1,4 @@
+<%= form_tag(search_url, {:method => 'get', :id => 'searchForm'}) do %>
+  <input type="text" name="q" size="30" value="<%=h @query %>" />
+  <%= submit_tag "OK" %>
+<% end %>

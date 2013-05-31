@@ -1,0 +1,6 @@
+<%= render :partial => 'flash_messages' %>
+
+<%= form_for @user, :as => :user, :url => { :controller => 'user', :action => "edit" } do |f| -%>
+  <%= profile_fields_for(f, UserController.editable_attributes_on_edit) %>
+  <%= f.submit t('rails_connector.views.user.edit_button') %>
+<% end -%>
