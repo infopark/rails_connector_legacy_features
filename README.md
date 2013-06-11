@@ -1,6 +1,6 @@
-# Rails Connector / Legacy Features
+# ![Infopark](https://raw.github.com/infopark/rails_connector_legacy_features/master/infopark.jpg) Rails Connector / Legacy Features
 
-We have been doing some spring cleaning and removed a number of infrequently 
+We have been doing some spring cleaning and removed a number of infrequently
 used addons from the [Rails Connector](https://github.com/infopark/rails_connector) gem:
 
 * `Comments`
@@ -18,10 +18,16 @@ used addons from the [Rails Connector](https://github.com/infopark/rails_connect
 * `TrackingHelper`
 * `UserController`
 
-The addons are still available as source code: 
+The addons are still available as source code:
 The source code is archived at: https://github.com/infopark/rails_connector_legacy_features
 
-If an application of your depends on these addons and you wish to continue using it, 
-simply copy the addon's source from the 
-[archive](https://github.com/kostia/rails_connector_legacy_features/archive/master.zip) 
+If an application of your depends on these addons and you wish to continue using it,
+simply copy the addon's source from the
+[archive](https://github.com/kostia/rails_connector_legacy_features/archive/master.zip)
 and copy it into your application.
+
+## License
+
+[LGPG-3.0](http://www.gnu.org/licenses/lgpl-3.0.html) License.
+Copyright 2013 Infopark AG.
+http://www.infopark.com
