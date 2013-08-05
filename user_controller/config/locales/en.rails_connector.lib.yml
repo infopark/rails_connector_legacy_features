@@ -1,0 +1,6 @@
+en:
+  rails_connector:
+    lib:
+      cms_accessible:
+        protected: "This file is protected"
+        not_released: "The file has not been released"
