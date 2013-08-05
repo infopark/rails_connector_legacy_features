@@ -1,5 +1,4 @@
-",
-"require 'recaptcha'
+require 'recaptcha'
 require 'active_resource/exceptions'
 
 module RailsConnector
