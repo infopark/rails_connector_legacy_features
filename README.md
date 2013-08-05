@@ -24,9 +24,9 @@ These features are still available as source code at:
 https://github.com/infopark/rails_connector_legacy_features
 
 If an application of you depends on these features and you wish to continue using it,
-simply copy the feature's source from the
+you can use the feature's source from the
 [archive](https://github.com/kostia/rails_connector_legacy_features/archive/master.zip)
-to your application.
+in your application.
 
 ## License
 
